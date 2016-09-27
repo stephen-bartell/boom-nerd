@@ -4,9 +4,13 @@
   "description": "boom barch calculators",
   "main": "index.js",
   "dependencies": {
+    "babel-cli": "^6.14.0",
     "hapi": "^15.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
