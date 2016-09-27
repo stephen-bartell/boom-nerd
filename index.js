@@ -1,12 +1,14 @@
 const calc = require('./lib');
 const Hapi = require('hapi')
 
-console.log(process.env)
+const port = process.argv[2] || 8000;
+console.log(port)
+
 // Create a server with a host and port
 const server = new Hapi.Server();
 server.connection({
-    host: 'localhost',
-    port: process.env.PORT || 8000
+    host: '0.0.0.0',
+    port: port
 });
 
 server.route({
